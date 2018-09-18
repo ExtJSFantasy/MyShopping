@@ -3,24 +3,24 @@
 		<view>
 			<myswiper></myswiper>
 		</view>
-		<view class="uni-card" style="display: flex;height: 120upx;justify-content: center;align-items: center;padding-left: 0;margin-left: 0;">
-			<view style="flex: 2;height: 100%;display: flex;justify-content: center;align-items: center;background-color: #1AAD19;border-top-right-radius: 80upx;border-bottom-right-radius: 80upx;">
-				<view style="text-align: center;">
-					<view style="font-size: 24upx;color: #F8F8F8;">2018-09-18 周二</view>
-					<view style="font-size: 36upx;color: #F8F8F8;">打卡</view>
+		<view class="uni-card md-center md-card md-card-resize-left">
+			<view class="md-center md-my-work">
+				<view class="item-center">
+					<view class="md-my-work-date">2018-09-18 周二</view>
+					<view class="md-my-work-clock">打卡</view>
 				</view>
 			</view>
-			<view style="flex: 1;text-align: center;">
+			<view class="md-my-work-item-center item-center">
 				<view>0道</view>
-				<view style="font-size: 24upx;color: #929292;">今天刷题</view>
+				<view class="md-my-work-font">今天刷题</view>
 			</view>
-			<view style="flex: 1;text-align: center;">
+			<view class="md-my-work-item-center item-center">
 				<view>0节</view>
-				<view style="font-size: 24upx;color: #929292;">今天学习</view>
+				<view class="md-my-work-font">今天学习</view>
 			</view>
-			<view style="flex: 1;text-align: center;">
+			<view class="md-my-work-item-center item-center">
 				<view>10天</view>
-				<view style="font-size: 24upx;color: #929292;">共打卡</view>
+				<view class="md-my-work-font">共打卡</view>
 			</view>
 		</view>
 		<view class="page">
@@ -31,7 +31,7 @@
 				</view>
 			</view>
 		</view>
-		<view class="uni-card md-written-calendar-content">
+		<view class="uni-card md-written-calendar-content md-card-resize-left">
 			<view class="uni-icon uni-icon-compose md-written-calendar">笔试日历</view>
 			<view class="md-written-calendar-des">最近一场:&nbsp;&nbsp;2018-09-19 03:00 虎牙直播</view>
 		</view>
@@ -94,12 +94,56 @@
 		width: 100%;
 	}
 
+	.md-center {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.md-card-resize-left {
+		padding-left: 0 !important;
+		margin-left: 0 !important;
+	}
+
+	.md-my-work {
+		flex: 2;
+		height: 100%;
+		background-color: #1AAD19;
+		border-top-right-radius: 80upx;
+		border-bottom-right-radius: 80upx;
+	}
+
+	.md-my-work-clock {
+		font-size: 36upx;
+		color: #F8F8F8;
+	}
+
+	.md-my-work-date {
+		font-size: 24upx;
+		color: #F8F8F8;
+	}
+
+	.item-center {
+		text-align: center;
+	}
+
+	.md-my-work-item-center {
+		flex: 1;
+	}
+
+	.md-my-work-font {
+		font-size: 24upx;
+		color: #929292;
+	}
+
+	.md-card {
+		height: 120upx;
+	}
+
 	.md-written-calendar-content {
 		display: flex;
 		height: 80upx;
 		align-items: center;
-		padding-left: 0 !important;
-		margin-left: 0 !important;
 	}
 
 	.md-written-calendar:before {

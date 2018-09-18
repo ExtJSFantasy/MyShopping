@@ -1028,6 +1028,53 @@
 .md-index {
   width: 100%;
 }
+.md-center {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.md-card-resize-left {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+.md-my-work {
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+  flex: 2;
+  height: 100%;
+  background-color: #1AAD19;
+  border-top-right-radius: 80rpx;
+  border-bottom-right-radius: 80rpx;
+}
+.md-my-work-clock {
+  font-size: 36rpx;
+  color: #F8F8F8;
+}
+.md-my-work-date {
+  font-size: 24rpx;
+  color: #F8F8F8;
+}
+.item-center {
+  text-align: center;
+}
+.md-my-work-item-center {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+}
+.md-my-work-font {
+  font-size: 24rpx;
+  color: #929292;
+}
+.md-card {
+  height: 120rpx;
+}
 .md-written-calendar-content {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1036,8 +1083,6 @@
   -webkit-box-align: center;
   -webkit-align-items: center;
   align-items: center;
-  padding-left: 0 !important;
-  margin-left: 0 !important;
 }
 .md-written-calendar:before {
   font-size: 40rpx;
