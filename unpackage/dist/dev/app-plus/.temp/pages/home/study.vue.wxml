@@ -1,0 +1,40 @@
+<import src="/components/swiper.vue.wxml" />
+<template name="39c8cdac">
+  <view class="_view data-v-1de28a0d">
+    <view class="_view data-v-1de28a0d">
+      <template data="{{...$root[$kk+'0'], $root}}" is="20a61426"></template>
+    </view>
+    <view class="_view data-v-1de28a0d uni-card" style="display: flex;height: 120rpx;justify-content: center;align-items: center;padding-left: 0;margin-left: 0;">
+      <view style="flex: 2;height: 100%;display: flex;justify-content: center;align-items: center;background-color: #1AAD19;border-top-right-radius: 80rpx;border-bottom-right-radius: 80rpx;" class="_view data-v-1de28a0d">
+        <view style="text-align: center;" class="_view data-v-1de28a0d">
+          <view style="font-size: 24rpx;color: #F8F8F8;" class="_view data-v-1de28a0d">2018-09-18 周二</view>
+          <view style="font-size: 36rpx;color: #F8F8F8;" class="_view data-v-1de28a0d">打卡</view>
+        </view>
+      </view>
+      <view style="flex: 1;text-align: center;" class="_view data-v-1de28a0d">
+        <view class="_view data-v-1de28a0d">0道</view>
+        <view style="font-size: 24rpx;color: #929292;" class="_view data-v-1de28a0d">今天刷题</view>
+      </view>
+      <view style="flex: 1;text-align: center;" class="_view data-v-1de28a0d">
+        <view class="_view data-v-1de28a0d">0节</view>
+        <view style="font-size: 24rpx;color: #929292;" class="_view data-v-1de28a0d">今天学习</view>
+      </view>
+      <view style="flex: 1;text-align: center;" class="_view data-v-1de28a0d">
+        <view class="_view data-v-1de28a0d">10天</view>
+        <view style="font-size: 24rpx;color: #929292;" class="_view data-v-1de28a0d">共打卡</view>
+      </view>
+    </view>
+    <view class="_view data-v-1de28a0d page">
+      <view class="_view data-v-1de28a0d uni-grid-9">
+        <view class="_view data-v-1de28a0d uni-grid-9-item {{index % 3 === 2 ? 'no-border-right' : ''}}" hover-class="uni-grid-9-item-hover" wx:key="index" key="{{index}}" wx:for="{{grids}}" wx:for-index="index" wx:for-item="item">
+          <image class="_image data-v-1de28a0d uni-grid-9-image" src="{{item}}"></image>
+          <text class="_text data-v-1de28a0d uni-grid-9-text">grid</text>
+        </view>
+      </view>
+    </view>
+    <view class="_view data-v-1de28a0d uni-card md-written-calendar-content">
+      <view class="_view data-v-1de28a0d uni-icon uni-icon-compose md-written-calendar">笔试日历</view>
+      <view class="_view data-v-1de28a0d md-written-calendar-des">最近一场:  2018-09-19 03:00 虎牙直播</view>
+    </view>
+  </view>
+</template>

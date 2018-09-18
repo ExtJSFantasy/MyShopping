@@ -1,0 +1,61 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/home/study",
+			"style": {
+				"navigationBarTitleText": "学习"
+			}
+		},
+		{
+			"path": "pages/home/community",
+			"style": {
+				"navigationBarTitleText": "社交"
+			}
+		},
+		{
+			"path": "pages/home/message",
+			"style": {
+				"navigationBarTitleText": "消息"
+			}
+		},
+		{
+			"path": "pages/home/myself",
+			"style": {
+				"navigationBarTitleText": "我"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "MyStudy",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#007AFF",
+		"borderStyle": "black",
+		"backgroundColor": "#ffffff",
+		"list": [{
+			"pagePath": "pages/home/study",
+			"iconPath": "static/component.png",
+			"selectedIconPath": "static/componentHL.png",
+			"text": "学习"
+		}, {
+			"pagePath": "pages/home/community",
+			"iconPath": "static/api.png",
+			"selectedIconPath": "static/apiHL.png",
+			"text": "社区"
+		}, {
+			"pagePath": "pages/home/message",
+			"iconPath": "static/template.png",
+			"selectedIconPath": "static/templateHL.png",
+			"text": "消息"
+		}, {
+			"pagePath": "pages/home/myself",
+			"iconPath": "static/api.png",
+			"selectedIconPath": "static/apiHL.png",
+			"text": "我"
+		}]
+	}
+}
