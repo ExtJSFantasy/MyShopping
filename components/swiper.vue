@@ -3,13 +3,13 @@
 		<view class="page-section page-section-spacing swiper">
 			<swiper :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration">
 				<swiper-item>
-					<view class="swiper-item color1">A</view>
+					<view class="swiper-item color1">111</view>
 				</swiper-item>
 				<swiper-item>
-					<view class="swiper-item color2">B</view>
+					<view class="swiper-item color2">222</view>
 				</swiper-item>
 				<swiper-item>
-					<view class="swiper-item color3">C</view>
+					<view class="swiper-item color3">333</view>
 				</swiper-item>
 			</swiper>
 		</view>

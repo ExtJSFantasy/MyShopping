@@ -1039,25 +1039,30 @@
   -webkit-align-items: center;
   align-items: center;
 }
-.md-card-resize-left {
+.md-card-resize {
   padding-left: 0 !important;
   margin-left: 0 !important;
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+}
+.md-grid-img {
+  height: 70rpx !important;
+  width: 60rpx !important;
+}
+.md-grid-text {
+  padding-top: 30rpx;
 }
 .md-my-work {
   -webkit-box-flex: 2;
   -webkit-flex: 2;
   flex: 2;
   height: 100%;
-  background-color: #1AAD19;
+  background-color: rgb(82, 174, 149);
   border-top-right-radius: 80rpx;
   border-bottom-right-radius: 80rpx;
 }
 .md-my-work-clock {
   font-size: 36rpx;
-  color: #F8F8F8;
-}
-.md-my-work-date {
-  font-size: 24rpx;
   color: #F8F8F8;
 }
 .item-center {
@@ -1092,7 +1097,7 @@
   -webkit-flex: 1;
   flex: 1;
   font-size: 30rpx;
-  border-left: solid 3px #1AAD19;
+  border-left: solid 3px rgb(82, 174, 149);
 }
 .md-written-calendar-des {
   -webkit-box-flex: 2;
@@ -1100,6 +1105,12 @@
   flex: 2;
   font-size: 28rpx;
   color: #929292;
+}
+@media screen and (max-width:400px) {
+.md-my-work-date {
+    font-size: 28rpx;
+    color: #F8F8F8;
+}
 }
 @font-face {
   font-family: uniicons;

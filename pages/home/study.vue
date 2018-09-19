@@ -3,8 +3,8 @@
 		<view>
 			<myswiper></myswiper>
 		</view>
-		<view class="uni-card md-center md-card md-card-resize-left">
-			<view class="md-center md-my-work">
+		<view class="uni-card md-center md-card md-card-resize">
+			<view class="md-center md-my-work" @tap="onTapGoMyClock">
 				<view class="item-center">
 					<view class="md-my-work-date">2018-09-18 周二</view>
 					<view class="md-my-work-clock">打卡</view>
@@ -25,13 +25,13 @@
 		</view>
 		<view class="page">
 			<view class="uni-grid-9">
-				<view class="uni-grid-9-item" hover-class="uni-grid-9-item-hover" v-for="(item,index) in grids" :key="index" :class="index % 3 === 2 ? 'no-border-right' : ''">
-					<image class="uni-grid-9-image" :src="item"></image>
-					<text class="uni-grid-9-text">grid</text>
+				<view class="uni-grid-9-item" hover-class="uni-grid-9-item-hover" v-for="(item,index) in grids" :key="index" :class="index % 3 === 2 ? 'no-border-right' : ''" @tap="onTapGoItemModule(item,index)">
+					<image class="uni-grid-9-image md-grid-img" :src="item.src"></image>
+					<text class="uni-grid-9-text md-grid-text" v-text="item.des"></text>
 				</view>
 			</view>
 		</view>
-		<view class="uni-card md-written-calendar-content md-card-resize-left">
+		<view class="uni-card md-written-calendar-content md-card-resize">
 			<view class="uni-icon uni-icon-compose md-written-calendar">笔试日历</view>
 			<view class="md-written-calendar-des">最近一场:&nbsp;&nbsp;2018-09-19 03:00 虎牙直播</view>
 		</view>
@@ -50,9 +50,32 @@
 	export default {
 		data() {
 			return {
-				grids: ["../../static/c1.png", "../../static/c2.png", "../../static/c3.png",
-					"../../static/c4.png", "../../static/c5.png"
-				],
+				grids: [{
+					id: 1,
+					src: "../../static/time-circle.png",
+					des: '专项练习',
+					url:'special/specialPractice'
+				}, {
+					id: 1,
+					src: "../../static/file-text.png",
+					des: '公司套题',
+					url:'/pages/home/special/specialPractice'
+				}, {
+					id: 1,
+					src: "../../static/edit-square.png",
+					des: '错题练习',
+					url:'/pages/home/special/specialPractice'
+				}, {
+					id: 1,
+					src: "../../static/filesearch.png",
+					des: '大题查看',
+					url:'/pages/home/special/specialPractice'
+				}, {
+					id: 1,
+					src: "../../static/star.png",
+					des: '精华专题',
+					url:'/pages/home/special/specialPractice'
+				}, ],
 				list: [{
 						id: 1,
 						value: '111'
@@ -78,6 +101,27 @@
 		},
 		components: {
 			myswiper
+		},
+		methods:{
+			// 跳转我的打卡界面
+			onTapGoMyClock(){
+				//let path = e.url ? e.url : e;
+				//let url = ~path.indexOf('platform') ? path : '/pages/template/' + path + '/' + path;
+				let url = "/pages/home/clock/myClock";
+				uni.navigateTo({
+					url: url
+				})
+			},
+			/**
+			 * 跳转各个模块
+			 */
+			onTapGoItemModule(module,index){
+				const path = '/pages/home/';
+				let url = path + module.url
+				uni.navigateTo({
+					url: url
+				})
+			}
 		}
 	}
 </script>
@@ -100,15 +144,26 @@
 		align-items: center;
 	}
 
-	.md-card-resize-left {
+	.md-card-resize {
 		padding-left: 0 !important;
 		margin-left: 0 !important;
+		padding-right: 0 !important;
+		margin-right: 0 !important;
+	}
+
+	.md-grid-img {
+		height: 70upx !important;
+		width: 60upx !important;
+	}
+
+	.md-grid-text {
+		padding-top: 30upx;
 	}
 
 	.md-my-work {
 		flex: 2;
 		height: 100%;
-		background-color: #1AAD19;
+		background-color: rgb(82, 174, 149);
 		border-top-right-radius: 80upx;
 		border-bottom-right-radius: 80upx;
 	}
@@ -118,10 +173,7 @@
 		color: #F8F8F8;
 	}
 
-	.md-my-work-date {
-		font-size: 24upx;
-		color: #F8F8F8;
-	}
+	
 
 	.item-center {
 		text-align: center;
@@ -153,12 +205,19 @@
 	.md-written-calendar {
 		flex: 1;
 		font-size: 30upx;
-		border-left: solid 3px #1AAD19;
+		border-left: solid 3px rgb(82, 174, 149);
 	}
 
 	.md-written-calendar-des {
 		flex: 2;
 		font-size: 28upx;
 		color: #929292;
+	}
+	/* 用于适应大屏幕pad */
+	@media screen and (max-width:400px) {
+		.md-my-work-date {
+			font-size: 28upx;
+			color: #F8F8F8;
+		}
 	}
 </style>

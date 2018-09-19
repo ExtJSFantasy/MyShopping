@@ -149,7 +149,7 @@
 
 	.page-section-spacing {
 		box-sizing: border-box;
-		padding: 0 80upx;
+		/* padding: 0 80upx; */
 	}
 
 	.page-section-title {

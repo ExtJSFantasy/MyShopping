@@ -15,7 +15,8 @@
 		{
 			"path": "pages/home/message",
 			"style": {
-				"navigationBarTitleText": "消息"
+				"navigationBarTitleText": "消息",
+				"enablePullDownRefresh": true
 			}
 		},
 		{
@@ -25,11 +26,27 @@
 			}
 		}
 	],
+	"subPackages": [
+		{
+			"root": "pages/home",		/* 对应的父级路径 */
+			"pages": [{
+				"path": "clock/myClock",
+				"style": {
+					"navigationBarTitleText": "我的打卡记录"
+				}
+			},{
+				"path": "special/specialPractice",
+				"style": {
+					"navigationBarTitleText": "知识点专项练习"
+				}
+			}]
+		}
+	],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
+		"navigationBarTextStyle": "#F8F8F8",
 		"navigationBarTitleText": "MyStudy",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "rgb(61,68,76)",
+		"backgroundColor": "rgb(61,68,76);"
 	},
 	"tabBar": {
 		"color": "#7A7E83",
