@@ -1,12 +1,12 @@
 <template>
 	<view>
 		<view class="uni-card md-card-resize">
-			<view style="padding: 20upx 20upx 0 20upx;letter-spacing: '5upx';">坚持每天记录自己的进步历程吧！一天最多只能打一次卡哦！</view>
-			<view style="padding-bottom: 15upx;margin-right: 15upx;color: rgb(82, 174, 149);text-align: right;">我的打卡记录&gt;&gt;</view>
+			<view class="md-clock-des">坚持每天记录自己的进步历程吧！一天最多只能打一次卡哦！</view>
+			<view class="md-clock-details" @tap="onTapGoLookClockDetails">我的打卡记录&gt;&gt;</view>
 		</view>
 		<view class="uni-card md-card-resize">
-			<view style="padding-top: 15upx;color: rgb(82, 174, 149);text-align: center;">2018-09-19</view>
-			<view style="padding-bottom: 15upx;color: #929292;text-align: center;">我在牛客打卡<text style="color: rgb(82, 174, 149);">10</text>天，完成了:</view>
+			<view class="md-clock-nowtime">{{nowDate}}</view>
+			<view class="md-clock-tips">我在牛客打卡<text class="md-standard-color">10</text>天，完成了:</view>
 			<view class="md-center md-over-bg">
 				<view class="md-my-work-item-center item-center">
 					<view>刷题</view>
@@ -21,20 +21,45 @@
 					<view class="md-my-work-font">0节</view>
 				</view>
 			</view>
-			<view style="padding: 0 25upx;">
-				<textarea style="width: 100%;height: 200upx;padding: 15upx 0 0 0;font-size: 32upx;" placeholder="简单说说你的想法或感受吧,最多140个字哦"></textarea>
+			<view class="md-clock-textarea-top">
+				<textarea class="md-clock-textarea-des" placeholder="简单说说你的想法或感受吧,最多140个字哦"></textarea>
 			</view>
 		</view>
-		<view style="width: 90%;margin: auto;border-radius: 5upx;"><button style="color: #F8F8F8;background-color: rgb(82,174,149);">去打卡</button></view>
-		<view style="width: 90%;margin: auto;border-radius: 5upx;"><button>再学一会</button></view>
+		<view class="md-clock-out"><button class="md-clock-inner-btn" @click="onClickGoClock">去打卡</button></view>
+		<view class="md-clock-out"><button @click="onClickStudyAgain">再学一会</button></view>
 	</view>
 </template>
 
 <script>
+	import {formatDateYMD} from '../../../common/util.js';
+	//let formatDateYMD = require('../../../common/util.js').formatDateYMD;
 	export default {
 		data() {
 			return {
-
+				nowDate: formatDateYMD(new Date())
+			}
+		},
+		methods:{
+			onTapGoLookClockDetails(){
+				uni.showToast({
+					title:'我的打卡记录',
+					mask:true,
+					duration:1500
+				})
+			},
+			onClickGoClock(){
+				uni.showToast({
+					title:'去打卡',
+					mask:true,
+					duration:1500
+				})
+			},
+			onClickStudyAgain(){
+				uni.showToast({
+					title:'再学一会',
+					mask:true,
+					duration:1500
+				})
 			}
 		}
 	}
@@ -42,6 +67,57 @@
 
 <style>
 	@import '../../../common/uni.css';
+
+	.md-clock-des {
+		padding: 20upx 20upx 0 20upx;
+		/* 控制字体间距 */
+		letter-spacing: '5upx';
+	}
+
+	.md-clock-details {
+		padding-bottom: 15upx;
+		margin-right: 15upx;
+		color: rgb(82, 174, 149);
+		text-align: right;
+	}
+
+	.md-clock-nowtime {
+		padding-top: 15upx;
+		color: rgb(82, 174, 149);
+		text-align: center;
+	}
+
+	.md-clock-tips {
+		padding-bottom: 15upx;
+		color: #929292;
+		text-align: center;
+	}
+
+	.md-standard-color {
+		color: rgb(82, 174, 149);
+	}
+
+	.md-clock-textarea-top {
+		padding: 0 25upx;
+	}
+
+	.md-clock-textarea-des {
+		width: 100%;
+		height: 200upx;
+		padding: 15upx 0 0 0;
+		font-size: 32upx;
+	}
+
+	.md-clock-out {
+		width: 90%;
+		margin: auto;
+		border-radius: 5upx;
+	}
+
+	.md-clock-inner-btn {
+		color: #F8F8F8;
+		background-color: rgb(82, 174, 149);
+	}
 
 	.md-card-resize {
 		padding-top: 0 !important;
@@ -87,12 +163,14 @@
 	.item-center {
 		text-align: center;
 	}
+
 	.md-my-work-font {
 		font-size: 32upx;
 		/* color: #929292; */
 	}
-	.md-over-bg{
+
+	.md-over-bg {
 		height: 120upx;
-		background-color: rgba(225,240,237,1);
+		background-color: rgba(225, 240, 237, 1);
 	}
 </style>

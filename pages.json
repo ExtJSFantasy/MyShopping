@@ -24,22 +24,39 @@
 			"style": {
 				"navigationBarTitleText": "我"
 			}
-		}
-	],
-	"subPackages": [
+		},
 		{
-			"root": "pages/home",		/* 对应的父级路径 */
-			"pages": [{
-				"path": "clock/myClock",
-				"style": {
-					"navigationBarTitleText": "我的打卡记录"
+			"path": "pages/home/clock/myClock",
+			"style": {
+				"navigationBarTitleText": "我的打卡记录"
+			}
+		},{
+			"path": "pages/home/special/specialPractice",
+			"style": {
+				"navigationBarTitleText": "知识点专项练习"
+			}
+		},
+		{
+			"path": "pages/home/map/mapTest",
+			"style": {
+				"navigationBarTitleText": "地图"
+			}
+		},
+		{
+			"path": "pages/home/wcalendar/wcalendar",
+			"style": {
+				"navigationBarTitleText": "笔试日历",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue400",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "26px",
+							"color": "#F8F8F8"
+						}]
+					}
 				}
-			},{
-				"path": "special/specialPractice",
-				"style": {
-					"navigationBarTitleText": "知识点专项练习"
-				}
-			}]
+			}
 		}
 	],
 	"globalStyle": {

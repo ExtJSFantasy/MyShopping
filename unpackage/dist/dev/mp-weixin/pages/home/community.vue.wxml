@@ -1,0 +1,15 @@
+<template name="3fdd024c">
+  <view class="_view data-v-63e0b3a6">
+    <view class="_view data-v-63e0b3a6 uni-list">
+      <view class="_view data-v-63e0b3a6 uni-list-cell" wx:key="index" key="{{index}}" wx:for="{{communitys}}" wx:for-index="index" wx:for-item="community">
+        <view class="_view data-v-63e0b3a6 uni-list-cell-navigate uni-navigate-right">
+          <view class="_view data-v-63e0b3a6 uni-icon md-community-title {{['uni-icon-' + community.type]}}">{{community.title}}</view>
+          <view class="_view data-v-63e0b3a6 md-community-badge">
+            <view wx:if="{{community.imgSrc}}" class="_view data-v-63e0b3a6 md-community-badge-cicle"></view>
+            <image class="_image data-v-63e0b3a6 md-community-badge" src="{{community.imgSrc}}"></image>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

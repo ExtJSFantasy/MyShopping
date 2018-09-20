@@ -1,0 +1,36 @@
+<template name="160b6152">
+  <view class="_view data-v-7567edf6">
+    <view class="_view data-v-7567edf6 uni-card md-card-resize">
+      <view class="_view data-v-7567edf6 md-clock-des">坚持每天记录自己的进步历程吧！一天最多只能打一次卡哦！</view>
+      <view style="padding-bottom: 15rpx;margin-right: 15rpx;color: rgb(82, 174, 149);text-align: right;" class="_view data-v-7567edf6">我的打卡记录>></view>
+    </view>
+    <view class="_view data-v-7567edf6 uni-card md-card-resize">
+      <view style="padding-top: 15rpx;color: rgb(82, 174, 149);text-align: center;" class="_view data-v-7567edf6">2018-09-19</view>
+      <view style="padding-bottom: 15rpx;color: #929292;text-align: center;" class="_view data-v-7567edf6">我在牛客打卡
+        <text style="color: rgb(82, 174, 149);" class="_text data-v-7567edf6">10</text>天，完成了:</view>
+      <view class="_view data-v-7567edf6 md-center md-over-bg">
+        <view class="_view data-v-7567edf6 md-my-work-item-center item-center">
+          <view class="_view data-v-7567edf6">刷题</view>
+          <view class="_view data-v-7567edf6 md-my-work-font">0道</view>
+        </view>
+        <view class="_view data-v-7567edf6 md-my-work-item-center item-center">
+          <view class="_view data-v-7567edf6">提交代码</view>
+          <view class="_view data-v-7567edf6 md-my-work-font">0次</view>
+        </view>
+        <view class="_view data-v-7567edf6 md-my-work-item-center item-center">
+          <view class="_view data-v-7567edf6">学习课程</view>
+          <view class="_view data-v-7567edf6 md-my-work-font">0节</view>
+        </view>
+      </view>
+      <view style="padding: 0 25rpx;" class="_view data-v-7567edf6">
+        <textarea style="width: 100%;height: 200rpx;padding: 15rpx 0 0 0;font-size: 32rpx;" placeholder="简单说说你的想法或感受吧,最多140个字哦" class="_textarea data-v-7567edf6" />
+      </view>
+    </view>
+    <view style="width: 90%;margin: auto;border-radius: 5rpx;" class="_view data-v-7567edf6">
+      <button style="color: #F8F8F8;background-color: rgb(82,174,149);" class="_button data-v-7567edf6">去打卡</button>
+    </view>
+    <view style="width: 90%;margin: auto;border-radius: 5rpx;" class="_view data-v-7567edf6">
+      <button class="_button data-v-7567edf6">再学一会</button>
+    </view>
+  </view>
+</template>

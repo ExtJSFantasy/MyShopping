@@ -20,7 +20,7 @@
 			<view class="uni-list">
 				<view class="uni-list-cell" style="display: block;" @tap="onTapOpenList">
 					<view class="uni-list-cell-navigate">
-						<view class="uni-icon uni-icon-arrowdown">编程语言</view>
+						<view class="uni-icon" :class="['uni-icon-'+upOrDown]" ><text style="font-size: 28upx;font-weight: 600;">编程语言</text></view>
 					</view>
 					<view class="uni-list" v-bind:style="[isShow ? 'display:inherit' : 'display: none;']">
 						<view class="uni-list-cell" style="display: block;">
@@ -45,7 +45,7 @@
 				</view>
 				<view class="uni-list-cell" style="display: block;">
 					<view class="uni-list-cell-navigate">
-						<view class="uni-icon uni-icon-arrowdown">数据结构</view>
+						<view class="uni-icon uni-icon-arrowdown"><text style="font-size: 28upx;font-weight: 600;">数据结构</text></view>
 					</view>
 					<view class="uni-list" v-bind:style="[isShow2 ? 'display:inherit' : 'display: none;']">
 						<view class="uni-list-cell" style="display: block;">
@@ -70,7 +70,7 @@
 				</view>
 				<view class="uni-list-cell" style="display: block;">
 					<view class="uni-list-cell-navigate">
-						<view class="uni-icon uni-icon-arrowdown">算法</view>
+						<view class="uni-icon uni-icon-arrowdown"><text style="font-size: 28upx;font-weight: 600;">算法</text></view>
 					</view>
 					<view class="uni-list" v-bind:style="[isShow3 ? 'display:inherit' : 'display: none;']">
 						<view class="uni-list-cell" style="display: block;">
@@ -105,11 +105,28 @@
 				pSets: [],
 				isShow: false,
 				isShow2: false,
-				isShow3: false
+				isShow3: false,
+				upOrDown:'arrowdown'
 			}
+		},
+		onReady:function(option){
+			
+		},
+		onLoad:function(option){
+			
+		},
+		onUnload:function(){
+			console.log(`22222`);
+			//clearInterval(this.st)
+		},
+		mounted:function(){
+			var _this = this;			
+		},
+		onHide:function(){
 		},
 		methods: {
 			onTapOpenList() {
+				!this.isShow ? this.upOrDown = 'arrowup' : this.upOrDown = 'arrowdown';
 				this.isShow = !this.isShow;
 			}
 		}
@@ -127,7 +144,9 @@
 	.uni-icon-arrowdown:before {
 		color: rgb(82, 174, 149);
 	}
-
+	.uni-icon-arrowup:before {
+		color: rgb(82, 174, 149);
+	}
 	.md-card-resize {
 		padding-top: 0 !important;
 		padding-right: 0 !important;

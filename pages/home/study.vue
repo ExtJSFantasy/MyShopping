@@ -6,7 +6,7 @@
 		<view class="uni-card md-center md-card md-card-resize">
 			<view class="md-center md-my-work" @tap="onTapGoMyClock">
 				<view class="item-center">
-					<view class="md-my-work-date">2018-09-18 周二</view>
+					<view class="md-my-work-date" v-text="nowDateWeek"></view>
 					<view class="md-my-work-clock">打卡</view>
 				</view>
 			</view>
@@ -33,8 +33,9 @@
 		</view>
 		<view class="uni-card md-written-calendar-content md-card-resize">
 			<view class="uni-icon uni-icon-compose md-written-calendar">笔试日历</view>
-			<view class="md-written-calendar-des">最近一场:&nbsp;&nbsp;2018-09-19 03:00 虎牙直播</view>
+			<view class="md-written-calendar-des" @click="onClickGoWriteLists">最近一场:&nbsp;&nbsp;<text v-text="startDate"></text> 虎牙直播</view>
 		</view>
+		
 		<!-- <view class="uni-list">
 			<view class="uni-list-cell" v-for="(item,index) in list" :key="index">
 				<view class="uni-list-cell-navigate uni-navigate-right">
@@ -46,7 +47,8 @@
 </template>
 
 <script>
-	import myswiper from '../../components/swiper.vue'
+	import myswiper from '../../components/swiper.vue';
+	import {formatDateYMD,formatDateYMDWeek,formatDateYMDHM} from '../../common/util.js';
 	export default {
 		data() {
 			return {
@@ -56,26 +58,31 @@
 					des: '专项练习',
 					url:'special/specialPractice'
 				}, {
-					id: 1,
+					id: 2,
 					src: "../../static/file-text.png",
 					des: '公司套题',
 					url:'/pages/home/special/specialPractice'
 				}, {
-					id: 1,
+					id: 3,
 					src: "../../static/edit-square.png",
 					des: '错题练习',
 					url:'/pages/home/special/specialPractice'
 				}, {
-					id: 1,
+					id: 4,
 					src: "../../static/filesearch.png",
 					des: '大题查看',
 					url:'/pages/home/special/specialPractice'
 				}, {
-					id: 1,
+					id: 5,
 					src: "../../static/star.png",
 					des: '精华专题',
 					url:'/pages/home/special/specialPractice'
-				}, ],
+				},{
+					id: 6,
+					src: "../../static/star.png",
+					des: '地图测试',
+					url:'map/mapTest'
+				} ],
 				list: [{
 						id: 1,
 						value: '111'
@@ -96,11 +103,15 @@
 						id: 5,
 						value: '555'
 					}
-				]
+				],
+				nowDateWeek:formatDateYMDWeek(new Date()),
+				startDate: formatDateYMDHM(new Date())
 			}
 		},
 		components: {
 			myswiper
+		},
+		onLoad:function(option){
 		},
 		methods:{
 			// 跳转我的打卡界面
@@ -118,6 +129,13 @@
 			onTapGoItemModule(module,index){
 				const path = '/pages/home/';
 				let url = path + module.url
+				uni.navigateTo({
+					url: url
+				})
+			},
+			onClickGoWriteLists(){
+				const path = '/pages/home/';
+				let url = path + 'wcalendar/wcalendar'
 				uni.navigateTo({
 					url: url
 				})

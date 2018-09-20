@@ -735,6 +735,47 @@
   color: #FFFFFF;
   margin: 20rpx;
 }
+.md-clock-des {
+  padding: 20rpx 20rpx 0 20rpx;
+  letter-spacing: '5rpx';
+}
+.md-clock-details {
+  padding-bottom: 15rpx;
+  margin-right: 15rpx;
+  color: rgb(82, 174, 149);
+  text-align: right;
+}
+.md-clock-nowtime {
+  padding-top: 15rpx;
+  color: rgb(82, 174, 149);
+  text-align: center;
+}
+.md-clock-tips {
+  padding-bottom: 15rpx;
+  color: #929292;
+  text-align: center;
+}
+.md-standard-color {
+  color: rgb(82, 174, 149);
+}
+.md-clock-textarea-top {
+  padding: 0 25rpx;
+}
+.md-clock-textarea-des {
+  width: 100%;
+  height: 200rpx;
+  padding: 15rpx 0 0 0;
+  font-size: 32rpx;
+}
+.md-clock-out {
+  width: 90%;
+  margin: auto;
+  border-radius: 5rpx;
+}
+.md-clock-inner-btn {
+  color: #F8F8F8;
+  background-color: rgb(82, 174, 149);
+}
 .md-card-resize {
   padding-top: 0 !important;
   padding-left: 0 !important;
@@ -787,5 +828,5 @@
 }
 .md-over-bg {
   height: 120rpx;
-  background-color: rgba(225,240,237,1);
+  background-color: rgba(225, 240, 237, 1);
 }
