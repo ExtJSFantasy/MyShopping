@@ -1,0 +1,7 @@
+<template name="76a1dbc2">
+  <view class="_view data-v-91f02220 uni-card" style="margin-top: 0;margin-left: 0;margin-right: 0;">
+    <view class="_view data-v-91f02220 md-clock-textarea-top">
+      <textarea style="height: 300rpx;" class="_textarea data-v-91f02220 md-clock-textarea-des" placeholder="感谢细心的你发现这个错误,为方便我们更快的排查并修正错误,请你详细描述错误." />
+    </view>
+  </view>
+</template>

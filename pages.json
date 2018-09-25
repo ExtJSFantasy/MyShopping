@@ -3,6 +3,12 @@
 		{
 			"path": "pages/home/study",
 			"style": {
+				//去除导航栏
+				//#ifdef APP-PLUS
+				/* "app-plus": {
+					"titleNView": false
+				}, */
+				//#endif
 				"navigationBarTitleText": "学习"
 			}
 		},
@@ -26,11 +32,17 @@
 			}
 		},
 		{
+			"path": "pages/home/lookme/selfInfo",
+			"style": {
+				"navigationBarTitleText": "完善信息"
+			}
+		},
+		{
 			"path": "pages/home/clock/myClock",
 			"style": {
 				"navigationBarTitleText": "我的打卡记录"
 			}
-		},{
+		}, {
 			"path": "pages/home/special/specialPractice",
 			"style": {
 				"navigationBarTitleText": "知识点专项练习"
@@ -43,6 +55,12 @@
 			}
 		},
 		{
+			"path": "pages/home/map/calenderTest",
+			"style": {
+				"navigationBarTitleText": "日历组件"
+			}
+		},
+		{
 			"path": "pages/home/wcalendar/wcalendar",
 			"style": {
 				"navigationBarTitleText": "笔试日历",
@@ -50,6 +68,28 @@
 					"titleNView": {
 						"buttons": [{
 							"text": "\ue400",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "26px",
+							"color": "#F8F8F8"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/home/wcalendar/listDetails",
+			"style": {
+				"navigationBarTitleText": "笔试日历详情"
+			}
+		},
+		{
+			"path": "pages/home/wcalendar/errorCorrection",
+			"style": {
+				"navigationBarTitleText": "纠错",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue503",
 							"fontSrc": "/static/uni.ttf",
 							"fontSize": "26px",
 							"color": "#F8F8F8"

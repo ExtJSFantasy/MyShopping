@@ -7,7 +7,7 @@
     <view class="_view data-v-1de28a0d uni-card md-center md-card md-card-resize">
       <view class="_view data-v-1de28a0d md-center md-my-work" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
         <view class="_view data-v-1de28a0d item-center">
-          <view class="_view data-v-1de28a0d md-my-work-date">2018-09-18 周二</view>
+          <view class="_view data-v-1de28a0d md-my-work-date">{{nowDateWeek}}</view>
           <view class="_view data-v-1de28a0d md-my-work-clock">打卡</view>
         </view>
       </view>
@@ -35,7 +35,8 @@
     </view>
     <view class="_view data-v-1de28a0d uni-card md-written-calendar-content md-card-resize">
       <view class="_view data-v-1de28a0d uni-icon uni-icon-compose md-written-calendar">笔试日历</view>
-      <view class="_view data-v-1de28a0d md-written-calendar-des">最近一场:  2018-09-19 03:00 虎牙直播</view>
+      <view class="_view data-v-1de28a0d md-written-calendar-des" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">最近一场:
+        <text class="_text data-v-1de28a0d">{{startDate}}</text> 虎牙直播</view>
     </view>
   </view>
 </template>

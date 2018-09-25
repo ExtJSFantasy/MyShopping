@@ -1,0 +1,37 @@
+<template name="082fb200">
+  <view style="height: 100%;background-color:rgb(240,239,245)" class="_view data-v-36c3012e">
+    <view class="_view data-v-36c3012e uni-card" style="margin: 0 0 0  0;background-color:rgb(240,239,245)">
+      <view style="height: 150rpx;display: flex;align-items: center;" class="_view data-v-36c3012e">
+        <image src="../../../static/shuijiao.jpg" style="width: 100rpx;height: 100rpx;border-radius: 50%;margin-left: 15rpx;margin-right: 15rpx;" class="_image data-v-36c3012e"></image>
+        <text class="_text data-v-36c3012e">牛客1772684号   分享</text>
+      </view>
+    </view>
+    <view class="_view data-v-36c3012e uni-list">
+      <view class="_view data-v-36c3012e uni-list-cell">
+        <view class="_view data-v-36c3012e uni-list-cell-navigate">
+          <view class="_view data-v-36c3012e uni-icon uni-icon-compose" style="font-size: 36rpx;">寒武纪科技</view>
+        </view>
+      </view>
+      <view class="_view data-v-36c3012e uni-list-cell">
+        <view class="_view data-v-36c3012e uni-list-cell-navigate">
+          <view class="_view data-v-36c3012e uni-icon uni-icon-compose" style="font-size: 36rpx;">2018-09-21 10:30</view>
+        </view>
+      </view>
+      <view class="_view data-v-36c3012e uni-list-cell">
+        <view class="_view data-v-36c3012e uni-list-cell-navigate">
+          <view class="_view data-v-36c3012e uni-icon uni-icon-compose" style="font-size: 36rpx;">16人参与</view>
+        </view>
+      </view>
+      <view class="_view data-v-36c3012e uni-list-cell">
+        <view class="_view data-v-36c3012e uni-list-cell-navigate uni-navigate-right">
+          <text class="_text data-v-36c3012e uni-icon uni-icon-compose" style="font-size: 36rpx;">设置提醒</text>
+          <text class="_text data-v-36c3012e uni-badge" style="margin-right: 20rpx;background-color: transparent;font-size: 36rpx;">不提醒</text>
+        </view>
+      </view>
+    </view>
+    <view style="display: flex;width: 100%;height: 50px;align-items: center;position: fixed;z-index: 999;bottom: 0;background-color: #F8F8F8;" class="_view data-v-36c3012e">
+      <text style="flex: 1;text-align: center;border-right: solid 2rpx #777777; {{[isState ? 'color:rgb(82, 174, 149)' : 'color:#000000']}}" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_text data-v-36c3012e">{{!isState ? '我参与了' : '已参加'}}</text>
+      <text style="flex: 1;text-align: center;" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_text data-v-36c3012e">日程纠错</text>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,43 @@
+<template name="553791fc">
+  <view style="height: 100%;background-color:rgb(240,239,245)" class="_view data-v-c1baed14">
+    <view class="_view data-v-c1baed14 uni-list">
+      <view class="_view data-v-c1baed14 uni-list-cell">
+        <view class="_view data-v-c1baed14 uni-list-cell-navigate">
+          <text bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_text data-v-c1baed14">头像</text>
+          <image bindtap="handleProxy" style="width: 80rpx;height: 80rpx;border-radius: 50%;" src="{{imgSrc}}" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_image data-v-c1baed14"></image>
+        </view>
+      </view>
+      <view class="_view data-v-c1baed14 uni-list-cell">
+        <view class="_view data-v-c1baed14 uni-list-cell-navigate">
+          <text class="_text data-v-c1baed14">牛客ID</text>
+          <text style="color: #777777;margin-right: 20rpx;" class="_text data-v-c1baed14">293704</text>
+        </view>
+      </view>
+      <view class="_view data-v-c1baed14 uni-list-cell">
+        <view class="_view data-v-c1baed14 uni-list-cell-navigate uni-navigate-right">
+          <text class="_text data-v-c1baed14">昵称</text>
+          <text style="color: #777777;margin-right: 20rpx;" class="_text data-v-c1baed14">Running Snail</text>
+        </view>
+      </view>
+      <view class="_view data-v-c1baed14 uni-list-cell">
+        <view class="_view data-v-c1baed14 uni-list-cell-navigate uni-navigate-right">
+          <text class="_text data-v-c1baed14">学校</text>
+          <text style="color: #777777;margin-right: 20rpx;" class="_text data-v-c1baed14">郑州大学</text>
+        </view>
+      </view>
+      <view class="_view data-v-c1baed14 uni-list-cell">
+        <view class="_view data-v-c1baed14 uni-list-cell-navigate uni-navigate-right">
+          <text class="_text data-v-c1baed14">想去的公司</text>
+          <text style="color: #777777;margin-right: 20rpx;" class="_text data-v-c1baed14">BAT</text>
+        </view>
+      </view>
+      <view class="_view data-v-c1baed14 uni-list-cell">
+        <view class="_view data-v-c1baed14 uni-list-cell-navigate uni-navigate-right">
+          <text class="_text data-v-c1baed14">从事的工作</text>
+          <text style="color: #777777;margin-right: 20rpx;" class="_text data-v-c1baed14">移动开发工程师</text>
+        </view>
+      </view>
+    </view>
+    <view style="margin-left: 20rpx;margin-top: 25rpx;" class="_view data-v-c1baed14">根据你设置的目标公司和职位定制专属智能试卷</view>
+  </view>
+</template>

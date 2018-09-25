@@ -1,7 +1,7 @@
 <template name="7cd7bd25">
   <view class="_view data-v-1bf58ce4">
     <view class="_view data-v-1bf58ce4 uni-list" style="height: 260rpx;display: flex;justify-content: center;background-color: rgb(61,68,76);">
-      <view class="_view data-v-1bf58ce4 uni-list-cell" style="display: block;">
+      <view class="_view data-v-1bf58ce4 uni-list-cell" style="display: block;" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
         <view class="_view data-v-1bf58ce4 uni-list-cell-navigate uni-navigate-right">
           <view class="_view data-v-1bf58ce4 uni-media-list">
             <view class="_view data-v-1bf58ce4 uni-media-list-logo">

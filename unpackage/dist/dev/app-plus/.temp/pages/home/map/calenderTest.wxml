@@ -1,0 +1,1 @@
+<import src="/pages/home/map/calenderTest.vue.wxml" /><template is="1730d3d9" data="{{ ...$root['0'], $root }}"/>

@@ -1849,10 +1849,7 @@
   margin: 20rpx;
 }
 .swiper-item {
-  display: block;
-  height: 300rpx;
-  line-height: 300rpx;
-  text-align: center;
+  width: 100%;
 }
 .swiper-list {
   margin-top: 40rpx;

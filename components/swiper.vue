@@ -2,7 +2,8 @@
 	<view class="page-body">
 		<view class="page-section page-section-spacing swiper">
 			<swiper :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration"
-			 :indicator-color="indicatorColor" :circular="isCircular" :indicator-active-color="indicatorActiveColor">
+			 :indicator-color="indicatorColor" :circular="isCircular" :indicator-active-color="indicatorActiveColor"
+			 :previous-margin="previousMargin" :next-margin="nextMargin">
 				<swiper-item v-for="(swiperItem,index) in swiperData" :key="index">
 					<image class="swiper-item" :src="swiperItem.src"></image>
 				</swiper-item>
@@ -24,19 +25,36 @@
 				isCircular: true,
 				indicatorColor: 'rgba(255, 255, 255, .3)',
 				indicatorActiveColor: '#3771ca',
-				swiperData:[
-					{id:1,src:'http://uploadfiles.nowcoder.net/images/20180103/4107856_1514945323774_9CE0C181492106EBC1EA5503CC8888A9',des:'111'},
-					{id:2,src:'http://uploadfiles.nowcoder.net/images/20171102/826546_1509627160575_F0A3049DCD34D211BBD1075F6DFD449A',des:'111'},
-					{id:3,src:'http://uploadfiles.nowcoder.net/images/20161226/59_1482724515931_D2808D093C902E876A13B99433C0FBC6',des:'111'},
-					{id:4,src:'http://uploadfiles.nowcoder.net/images/20180123/826546_1516692063415_1B225644541D9102ED68A3D7035A029F',des:'111'}
+				previousMargin: '10px',					//这里可使用px
+				nextMargin: '10px',
+				swiperData: [{
+						id: 1,
+						src: 'http://uploadfiles.nowcoder.net/images/20180103/4107856_1514945323774_9CE0C181492106EBC1EA5503CC8888A9',
+						des: '111'
+					},
+					{
+						id: 2,
+						src: 'http://uploadfiles.nowcoder.net/images/20171102/826546_1509627160575_F0A3049DCD34D211BBD1075F6DFD449A',
+						des: '111'
+					},
+					{
+						id: 3,
+						src: 'http://uploadfiles.nowcoder.net/images/20161226/59_1482724515931_D2808D093C902E876A13B99433C0FBC6',
+						des: '111'
+					},
+					{
+						id: 4,
+						src: 'http://uploadfiles.nowcoder.net/images/20180123/826546_1516692063415_1B225644541D9102ED68A3D7035A029F',
+						des: '111'
+					}
 				]
 			}
 		},
-		onReady:function(){
+		onReady: function() {
 			this.initData();
 		},
-		methods:{
-			initData(){
+		methods: {
+			initData() {
 				console.log(`初始化`)
 			}
 		}

@@ -1,0 +1,1 @@
+<import src="/pages/home/wcalendar/listDetails.vue.wxml" /><template is="082fb200" data="{{ ...$root['0'], $root }}"/>

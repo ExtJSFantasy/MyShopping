@@ -27,24 +27,28 @@
 						title: '2018-09-20 周四',
 						data: [{
 								id: 1,
+								groupId: 1,
 								subName: '平安寿险',
 								startDate: '18:00',
 								endTime: '20:00'
 							},
 							{
 								id: 2,
+								groupId: 1,
 								subName: 'CVTE',
 								startDate: '19:00',
 								endTime: '21:00'
 							},
 							{
 								id: 3,
+								groupId: 1,
 								subName: '思科',
 								startDate: '19:00',
 								endTime: '21:00'
 							},
 							{
 								id: 4,
+								groupId: 1,
 								subName: '今日头条',
 								startDate: '19:00',
 								endTime: '20:00'
@@ -56,24 +60,28 @@
 						title: '2018-09-21 周五',
 						data: [{
 								id: 1,
+								groupId: 2,
 								subName: '寒武纪科技',
 								startDate: '18:00',
 								endTime: '20:00'
 							},
 							{
 								id: 2,
+								groupId: 2,
 								subName: '拼多多',
 								startDate: '19:00',
 								endTime: '21:00'
 							},
 							{
 								id: 3,
+								groupId: 2,
 								subName: 'BOSS直聘',
 								startDate: '19:00',
 								endTime: '21:00'
 							},
 							{
 								id: 4,
+								groupId: 2,
 								subName: '深信服',
 								startDate: '19:00',
 								endTime: '20:00'
@@ -85,12 +93,14 @@
 						title: '2018-09-22 周六',
 						data: [{
 								id: 1,
+								groupId: 3,
 								subName: '努比亚',
 								startDate: '18:00',
 								endTime: '20:00'
 							},
 							{
 								id: 2,
+								groupId: 3,
 								subName: '网易互娱',
 								startDate: '19:00',
 								endTime: '21:00'
@@ -110,11 +120,16 @@
 		},
 		methods: {
 			onClickIntention(data) {
-				uni.showToast({
+				/* uni.showToast({
 					title: `${data.subName}`,
 					icon:'success',
 					mask: true,
 					duration: 1500
+				}) */
+				const path = '/pages/home/';
+				let url = `${path}wcalendar/listDetails?groupId=${data.groupId}&listId=${data.id}`;
+				uni.navigateTo({
+					url: url
 				})
 			}
 		}

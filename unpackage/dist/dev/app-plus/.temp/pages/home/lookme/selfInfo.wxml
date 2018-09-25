@@ -1,0 +1,1 @@
+<import src="/pages/home/lookme/selfInfo.vue.wxml" /><template is="553791fc" data="{{ ...$root['0'], $root }}"/>

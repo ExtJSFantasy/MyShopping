@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view class="uni-list" style="height: 260upx;display: flex;justify-content: center;background-color: rgb(61,68,76);">
-			<view class="uni-list-cell" style="display: block;">
+			<view class="uni-list-cell" style="display: block;" @click="onClickGoSelfInfo">
 				<view class="uni-list-cell-navigate uni-navigate-right">
 					<view class="uni-media-list">
 						<view class="uni-media-list-logo">
@@ -160,6 +160,13 @@
 					icon: '',
 					des: '设置'
 				}]
+			}
+		},
+		methods:{
+			onClickGoSelfInfo(){
+				uni.navigateTo({
+					url:'/pages/home/lookme/selfInfo'
+				})
 			}
 		}
 	}

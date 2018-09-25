@@ -82,7 +82,7 @@
 					src: "../../static/star.png",
 					des: '地图测试',
 					url:'map/mapTest'
-				} ],
+				}],
 				list: [{
 						id: 1,
 						value: '111'
