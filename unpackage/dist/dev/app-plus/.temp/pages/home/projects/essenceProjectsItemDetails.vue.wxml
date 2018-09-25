@@ -1,0 +1,19 @@
+<template name="1483132a">
+  <view class="_view data-v-8d970744">
+    <view class="_view data-v-8d970744">
+      <text class="_text data-v-8d970744">前端面试经典题目合集（HTML+CSS）</text>
+      <text class="_text data-v-8d970744">1/72</text>
+    </view>
+    <view class="_view data-v-8d970744 uni-card">
+      <text class="_text data-v-8d970744">(问答题)</text>
+      <text class="_text data-v-8d970744">浏览器页面有哪三层构成，分别是什么，作用是什么</text>
+      <view class="_view data-v-8d970744">
+        <text class="_text data-v-8d970744 uni-icon uni-icon-checkbox">参考答案</text>
+        <view class="_view data-v-8d970744">构成：结构层、表示层、行为层</view>
+        <view class="_view data-v-8d970744">分别是：HTML、CSS、JavaScript</view>
+        <view class="_view data-v-8d970744">作用：HTML实现页面结构，CSS完成页面的表现与风格，JavaScript实现一些客户端的功能与业务</view>
+      </view>
+    </view>
+    <view class="_view data-v-8d970744">查看解析和讨论</view>
+  </view>
+</template>

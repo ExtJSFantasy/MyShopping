@@ -3,7 +3,11 @@
 		<view class="page-section page-section-spacing swiper">
 			<swiper :indicator-dots="indicatorDots" :autoplay="autoplay" :duration="duration" :circular="isCircular" @change="onChangeItem">
 				<swiper-item v-for="(swiperItem,index) in swiperData" :key="index" >
-					<image class="swiper-item" :src="swiperItem.src"></image>
+					<view style="">
+						<view style="">
+							
+						</view>
+					</view>
 				</swiper-item>
 			</swiper>
 		</view>

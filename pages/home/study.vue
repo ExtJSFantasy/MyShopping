@@ -76,7 +76,7 @@
 					id: 5,
 					src: "../../static/star.png",
 					des: '精华专题',
-					url:'/pages/home/special/specialPractice'
+					url:'projects/essenceProjects'
 				},{
 					id: 6,
 					src: "../../static/star.png",

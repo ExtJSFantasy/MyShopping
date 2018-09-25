@@ -97,6 +97,45 @@
 					}
 				}
 			}
+		},
+		{
+			"path": "pages/home/projects/essenceProjects",
+			"style": {
+				"navigationBarTitleText": "精华专题"
+			}
+		},
+		{
+			"path": "pages/home/projects/essenceProjectsItemDetails",
+			"style": {
+				"navigationBarTitleText": " ",/* 这里不能直接"" ，要有一个空格 */
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue503",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "26px",
+							"color": "#F8F8F8"
+						},
+						{
+							"text": "\ue503",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "26px",
+							"color": "#F8F8F8"
+						},
+						{
+							"text": "\ue503",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "26px",
+							"color": "#F8F8F8"
+						},{
+							"text": "\ue503",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "26px",
+							"color": "#F8F8F8"
+						}]
+					}
+				}
+			}
 		}
 	],
 	"globalStyle": {
