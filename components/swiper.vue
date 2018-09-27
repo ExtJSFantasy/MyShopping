@@ -4,8 +4,10 @@
 			<swiper :indicator-dots="indicatorDots" :autoplay="autoplay" :interval="interval" :duration="duration"
 			 :indicator-color="indicatorColor" :circular="isCircular" :indicator-active-color="indicatorActiveColor"
 			 :previous-margin="previousMargin" :next-margin="nextMargin">
-				<swiper-item v-for="(swiperItem,index) in swiperData" :key="index">
-					<image class="swiper-item" :src="swiperItem.src"></image>
+				<swiper-item  v-for="(swiperItem,index) in swiperData" :key="index" style="width: 100%;-webkit-overflow-scrolling : touch;">
+					<view class="swiper-item">
+						<image style="width: 100%;"  :src="swiperItem.src"></image>
+					</view>
 				</swiper-item>
 			</swiper>
 		</view>
@@ -25,8 +27,8 @@
 				isCircular: true,
 				indicatorColor: 'rgba(255, 255, 255, .3)',
 				indicatorActiveColor: '#3771ca',
-				previousMargin: '10px',					//这里可使用px
-				nextMargin: '10px',
+				previousMargin: '30px',					//这里可使用px
+				nextMargin: '30px',
 				swiperData: [{
 						id: 1,
 						src: 'http://uploadfiles.nowcoder.net/images/20180103/4107856_1514945323774_9CE0C181492106EBC1EA5503CC8888A9',
@@ -65,7 +67,8 @@
 	@import "../common/uni.css";
 
 	.swiper-item {
-		width: 100%;
+		width: 98%;
+		margin: auto;
 	}
 
 	.swiper-list {

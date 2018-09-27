@@ -101,38 +101,42 @@
 		{
 			"path": "pages/home/projects/essenceProjects",
 			"style": {
-				"navigationBarTitleText": "精华专题"
+				"navigationBarTitleText": "精华专题",
+				"enablePullDownRefresh": true		/* 如果不添加，那么系统的onPullDownRefresh会无效 */
 			}
 		},
 		{
 			"path": "pages/home/projects/essenceProjectsItemDetails",
 			"style": {
-				"navigationBarTitleText": " ",/* 这里不能直接"" ，要有一个空格 */
+				"navigationBarTitleText": " ",
+				"enablePullDownRefresh": true,
+				/* 这里不能直接"" ，要有一个空格 */
 				"app-plus": {
 					"titleNView": {
+						/* 逆序 */
 						"buttons": [{
-							"text": "\ue503",
-							"fontSrc": "/static/uni.ttf",
-							"fontSize": "26px",
-							"color": "#F8F8F8"
-						},
-						{
-							"text": "\ue503",
-							"fontSrc": "/static/uni.ttf",
-							"fontSize": "26px",
-							"color": "#F8F8F8"
-						},
-						{
-							"text": "\ue503",
-							"fontSrc": "/static/uni.ttf",
-							"fontSize": "26px",
-							"color": "#F8F8F8"
-						},{
-							"text": "\ue503",
-							"fontSrc": "/static/uni.ttf",
-							"fontSize": "26px",
-							"color": "#F8F8F8"
-						}]
+								"text": "\ue537",
+								"fontSrc": "/static/uni.ttf",
+								"fontSize": "26px",
+								"color": "#F8F8F8"
+							},
+							{
+								"text": "\ue405",
+								"fontSrc": "/static/uni.ttf",
+								"fontSize": "26px",
+								"color": "#F8F8F8"
+							}, {
+								"text": "\ue400",
+								"fontSrc": "/static/uni.ttf",
+								"fontSize": "26px",
+								"color": "#F8F8F8"
+							},{
+								"text": "\ue408",
+								"fontSrc": "/static/uni.ttf",
+								"fontSize": "26px",
+								"color": "#F8F8F8"
+							}
+						]
 					}
 				}
 			}

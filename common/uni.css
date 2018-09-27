@@ -566,7 +566,8 @@
 
 .uni-grid-9 {
 	background: #f2f2f2;
-	width: 750upx;
+	/* width: 750upx; */
+	width: 100%;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -574,7 +575,8 @@
 }
 
 .uni-grid-9-item {
-	width: 250upx;
+	/* width: 250upx; */
+	width: 33.3333%;
 	height: 200upx;
 	display: flex;
 	flex-direction: column;

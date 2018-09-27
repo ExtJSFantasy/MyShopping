@@ -25,7 +25,8 @@
 		</view>
 		<view class="page">
 			<view class="uni-grid-9">
-				<view class="uni-grid-9-item" hover-class="uni-grid-9-item-hover" v-for="(item,index) in grids" :key="index" :class="index % 3 === 2 ? 'no-border-right' : ''" @tap="onTapGoItemModule(item,index)">
+				<view class="uni-grid-9-item" hover-class="uni-grid-9-item-hover" v-for="(item,index) in grids" :key="index" :class="index % 3 === 2 ? 'no-border-right' : ''"
+				 @tap="onTapGoItemModule(item,index)">
 					<image class="uni-grid-9-image md-grid-img" :src="item.src"></image>
 					<text class="uni-grid-9-text md-grid-text" v-text="item.des"></text>
 				</view>
@@ -33,9 +34,10 @@
 		</view>
 		<view class="uni-card md-written-calendar-content md-card-resize">
 			<view class="uni-icon uni-icon-compose md-written-calendar">笔试日历</view>
-			<view class="md-written-calendar-des" @click="onClickGoWriteLists">最近一场:&nbsp;&nbsp;<text v-text="startDate"></text> 虎牙直播</view>
+			<view class="md-written-calendar-des" @click="onClickGoWriteLists">最近一场:&nbsp;&nbsp;<text v-text="startDate"></text>
+				虎牙直播</view>
 		</view>
-		
+
 		<!-- <view class="uni-list">
 			<view class="uni-list-cell" v-for="(item,index) in list" :key="index">
 				<view class="uni-list-cell-navigate uni-navigate-right">
@@ -48,7 +50,11 @@
 
 <script>
 	import myswiper from '../../components/swiper.vue';
-	import {formatDateYMD,formatDateYMDWeek,formatDateYMDHM} from '../../common/util.js';
+	import {
+		formatDateYMD,
+		formatDateYMDWeek,
+		formatDateYMDHM
+	} from '../../common/util.js';
 	export default {
 		data() {
 			return {
@@ -56,32 +62,32 @@
 					id: 1,
 					src: "../../static/time-circle.png",
 					des: '专项练习',
-					url:'special/specialPractice'
+					url: 'special/specialPractice'
 				}, {
 					id: 2,
 					src: "../../static/file-text.png",
 					des: '公司套题',
-					url:'/pages/home/special/specialPractice'
+					url: '/pages/home/special/specialPractice'
 				}, {
 					id: 3,
 					src: "../../static/edit-square.png",
 					des: '错题练习',
-					url:'/pages/home/special/specialPractice'
+					url: '/pages/home/special/specialPractice'
 				}, {
 					id: 4,
 					src: "../../static/filesearch.png",
 					des: '大题查看',
-					url:'/pages/home/special/specialPractice'
+					url: '/pages/home/special/specialPractice'
 				}, {
 					id: 5,
 					src: "../../static/star.png",
 					des: '精华专题',
-					url:'projects/essenceProjects'
-				},{
+					url: 'projects/essenceProjects'
+				}, {
 					id: 6,
 					src: "../../static/star.png",
 					des: '地图测试',
-					url:'map/mapTest'
+					url: 'map/mapTest'
 				}],
 				list: [{
 						id: 1,
@@ -104,18 +110,22 @@
 						value: '555'
 					}
 				],
-				nowDateWeek:formatDateYMDWeek(new Date()),
+				nowDateWeek: formatDateYMDWeek(new Date()),
 				startDate: formatDateYMDHM(new Date())
 			}
 		},
 		components: {
 			myswiper
 		},
-		onLoad:function(option){
+		onLoad: function(option) {
+			
 		},
-		methods:{
+		onUnload:function(){
+			
+		},
+		methods: {
 			// 跳转我的打卡界面
-			onTapGoMyClock(){
+			onTapGoMyClock() {
 				//let path = e.url ? e.url : e;
 				//let url = ~path.indexOf('platform') ? path : '/pages/template/' + path + '/' + path;
 				let url = "/pages/home/clock/myClock";
@@ -126,14 +136,14 @@
 			/**
 			 * 跳转各个模块
 			 */
-			onTapGoItemModule(module,index){
+			onTapGoItemModule(module, index) {
 				const path = '/pages/home/';
 				let url = path + module.url
 				uni.navigateTo({
 					url: url
 				})
 			},
-			onClickGoWriteLists(){
+			onClickGoWriteLists() {
 				const path = '/pages/home/';
 				let url = path + 'wcalendar/wcalendar'
 				uni.navigateTo({
@@ -191,7 +201,7 @@
 		color: #F8F8F8;
 	}
 
-	
+
 
 	.item-center {
 		text-align: center;
@@ -231,6 +241,7 @@
 		font-size: 28upx;
 		color: #929292;
 	}
+
 	/* 用于适应大屏幕pad */
 	@media screen and (max-width:400px) {
 		.md-my-work-date {

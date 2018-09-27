@@ -7,8 +7,21 @@
 				</map>
 			</view>
 		</view>
+		<!-- <view class="body-view">
+			<view class="uni-list-cell uni-list-cell-pd">
+				<view class="uni-list-cell-db" v-model="openOff"></view>
+				<switch @change="switchChange"/>
+			</view>
+		</view> -->
+		<view class="uni-list">
+			<view class="uni-list-cell uni-list-cell-pd">
+				<view class="uni-list-cell-db" v-text="openOff"></view>
+				<switch @change="switchChange" />
+			</view>
+		</view>
 		<button @click="getCaputure">截屏</button>
 		<image :src="testSrc"></image>
+
 	</view>
 </template>
 <script>
@@ -39,7 +52,19 @@
 					width: 2,
 					dottedLine: false
 				}],
-				testSrc: ''
+				testSrc: '',
+				openOff: '关闭',
+				timer: null
+			}
+		},
+		onLoad: function() {
+
+		},
+		/* 界面卸载时清除轮询器 */
+		onUnload: function() {
+			if (this.timer) {
+				clearInterval(this.timer);
+				this.timer = null;
 			}
 		},
 		methods: {
@@ -55,7 +80,7 @@
 			},
 			//绘制截屏
 			drowCaputure(ws) {
-				var _this = this;
+				let _this = this;
 				let bitmap = null;
 				bitmap = new plus.nativeObj.Bitmap('test');
 				//将webview内容绘制到Bitmap对象中
@@ -66,12 +91,39 @@
 				}, function(e) {
 					console.log(`失败${JSON.stringify(e)}`);
 				})
+			},
+			switchChange: function(e) {
+				console.log('switch1 发生 change 事件，携带值为' + e.detail.value);
+				if (e.detail.value) {
+					this.openOff = '打开';
+					this.timer = setInterval(function() {
+						uni.vibrateLong({
+							success: function() {
+								console.log('success');
+							}
+						});
+						clearInterval();
+					}, 1000)
+				} else {
+					this.openOff = '关闭';
+					if (this.timer) {
+						clearInterval(this.timer);
+						this.timer = null;
+					}
+				}
+			},
+			switch2Change: function(e) {
+				console.log('switch2 发生 change 事件，携带值为' + e.detail.value)
 			}
 
 		},
 		mounted: function() {
-			let list = [{a:1},{b:2}];
-			for(let a of list)
+			let list = [{
+				a: 1
+			}, {
+				b: 2
+			}];
+			for (let a of list)
 
 			{
 
@@ -82,6 +134,8 @@
 	}
 </script>
 <style>
+	@import '../../../common/uni.css';
+
 	map {
 		width: 100%;
 		height: 600upx;

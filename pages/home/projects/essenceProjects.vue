@@ -24,7 +24,7 @@
 		data() {
 			return {
 				showImg: false,
-				show: false,
+				// show: false,
 				windowHeight: 0,
 				defaultSrc: '../../../static/60x60.png',
 				projects: [{
@@ -137,6 +137,27 @@
 					}
 				]
 			}
+		},
+		onPullDownRefresh() {
+			setTimeout(function() {
+				uni.stopPullDownRefresh();
+			}, 3000)
+			console.log(`下拉刷新`);
+		},
+		onLoad:function(){
+			/* uni.startPullDownRefresh();
+			setTimeout(function(){
+				uni.stopPullDownRefresh()
+			},500) */
+		},
+		/* 页面卸载 */
+		onUnload:function(){
+		},
+		mounted:function(){
+			uni.startPullDownRefresh();
+			setTimeout(function(){
+				uni.stopPullDownRefresh()
+			},500)
 		},
 		methods: {
 			load() {

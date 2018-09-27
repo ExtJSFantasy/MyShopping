@@ -36,13 +36,19 @@
 				newsitems: []
 			}
 		},
+		//每次切换点击时都会触发
+		onShow: function() {
+			console.log(`onShow`);
+		},
+		//开启程序时是不加载的。当切第一次换时会触发
 		onLoad: function() {
+			console.log(`message111111`);
 			this.newsitems = this.randomfn()
 		},
 		onUnload: function() {
-			this.scrollLeft = 0,
-				this.isClickChange = false,
-				this.currentTab = 0;
+			this.scrollLeft = 0;
+			this.isClickChange = false;
+			this.currentTab = 0;
 		},
 		onPullDownRefresh() {
 			setTimeout(function() {
