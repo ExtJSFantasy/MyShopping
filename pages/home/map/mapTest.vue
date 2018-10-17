@@ -54,7 +54,8 @@
 				}],
 				testSrc: '',
 				openOff: '关闭',
-				timer: null
+				timer: null,
+				top:'30upx'
 			}
 		},
 		onLoad: function() {
@@ -139,5 +140,6 @@
 	map {
 		width: 100%;
 		height: 600upx;
+		margin-top: var(top);
 	}
 </style>

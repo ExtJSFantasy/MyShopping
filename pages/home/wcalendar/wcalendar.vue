@@ -127,9 +127,11 @@
 					duration: 1500
 				}) */
 				const path = '/pages/home/';
+				//参数=不要加空格
 				let url = `${path}wcalendar/listDetails?groupId=${data.groupId}&listId=${data.id}`;
 				uni.navigateTo({
 					url: url
+
 				})
 			}
 		}

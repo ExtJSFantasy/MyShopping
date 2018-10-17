@@ -48,45 +48,8 @@
 				upperThreshold: 100,
 				owerThreshold: 100,
 				detailLists: [{
-						id: 1
-					},
-					{
-						id: 2
-					},
-					{
-						id: 3
-					},
-					{
-						id: 4
-					},
-					{
-						id: 5
-					},
-					{
-						id: 6
-					},
-					{
-						id: 7
-					},
-					{
-						id: 8
-					},
-					{
-						id: 19
-					},
-					{
-						id: 10
-					},
-					{
-						id: 11
-					},
-					{
-						id: 12
-					},
-					{
-						id: 13
-					}
-				],
+					id: 1
+				}],
 				startX: 0,
 				startY: 0,
 				endX: 0,
@@ -164,6 +127,17 @@
 				}
 				this.startX = this.startY = this.endX = this.endY = 0;
 				this.mLeft = 0;
+				var _this = this;
+				uni.showLoading({
+					mask: true,
+					title: `加载中...`,
+					success: function() {
+						uni.hideLoading()
+						_this.detailLists.push({
+							id: _this.detailLists.lenth + 1
+						});
+					}
+				})
 			},
 			//向左滑动
 			nextSubject() {
@@ -220,7 +194,8 @@
 	}
 </script>
 
-<style lang="scss">
+<style>
+	/* lang="scss" */
 	@import '../../../common/uni.css';
 	@import '../../../common/icon.css';
 
@@ -229,7 +204,7 @@
 		padding: 0 !important;
 	}
 
-	.container {
+	/* .container {
 		height: 100%;
 		box-sizing: border-box;
 
@@ -242,6 +217,24 @@
 				margin: auto;
 			}
 		}
+	} */
+	.container {
+		height: 100%;
+		box-sizing: border-box;
+
+
+	}
+
+	.content {
+		height: 100%;
+
+
+	}
+
+	.md-content-detail {
+		width: 740upx;
+		position: relative;
+		margin: auto;
 	}
 
 	.uni-icon-checkmarkempty:before {

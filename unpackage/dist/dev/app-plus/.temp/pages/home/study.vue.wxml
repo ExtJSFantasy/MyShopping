@@ -2,10 +2,10 @@
 <template name="39c8cdac">
   <view class="_view data-v-1de28a0d">
     <view class="_view data-v-1de28a0d">
-      <template data="{{...$root[$kk+'0'], $root}}" is="20a61426"></template>
+      <template data="{{...$root['0'], ...$root[$kk+'MC7-0'],$root}}" is="20a61426"></template>
     </view>
     <view class="_view data-v-1de28a0d uni-card md-center md-card md-card-resize">
-      <view class="_view data-v-1de28a0d md-center md-my-work" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+      <view class="_view data-v-1de28a0d md-center md-my-work" bindtap="handleProxy" data-eventid="{{'BDP-0'}}" data-comkey="{{$k}}">
         <view class="_view data-v-1de28a0d item-center">
           <view class="_view data-v-1de28a0d md-my-work-date">{{nowDateWeek}}</view>
           <view class="_view data-v-1de28a0d md-my-work-clock">打卡</view>
@@ -26,7 +26,7 @@
     </view>
     <view class="_view data-v-1de28a0d page">
       <view class="_view data-v-1de28a0d uni-grid-9">
-        <view class="_view data-v-1de28a0d uni-grid-9-item {{index % 3 === 2 ? 'no-border-right' : ''}}" hover-class="uni-grid-9-item-hover" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'1-'+index}}" data-comkey="{{$k}}" wx:for="{{grids}}"
+        <view class="_view data-v-1de28a0d uni-grid-9-item {{index % 3 === 2 ? 'no-border-right' : ''}}" hover-class="uni-grid-9-item-hover" wx:key="index" key="{{index}}" bindtap="handleProxy" data-eventid="{{'bri-1-'+index}}" data-comkey="{{$k}}" wx:for="{{grids}}"
           wx:for-index="index" wx:for-item="item">
           <image class="_image data-v-1de28a0d uni-grid-9-image md-grid-img" src="{{item.src}}"></image>
           <text class="_text data-v-1de28a0d uni-grid-9-text md-grid-text">{{item.des}}</text>
@@ -35,7 +35,7 @@
     </view>
     <view class="_view data-v-1de28a0d uni-card md-written-calendar-content md-card-resize">
       <view class="_view data-v-1de28a0d uni-icon uni-icon-compose md-written-calendar">笔试日历</view>
-      <view class="_view data-v-1de28a0d md-written-calendar-des" bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}">最近一场:
+      <view class="_view data-v-1de28a0d md-written-calendar-des" bindtap="handleProxy" data-eventid="{{'15P-2'}}" data-comkey="{{$k}}">最近一场:
         <text class="_text data-v-1de28a0d">{{startDate}}</text> 虎牙直播</view>
     </view>
   </view>

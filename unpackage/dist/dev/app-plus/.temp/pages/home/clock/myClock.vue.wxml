@@ -2,7 +2,7 @@
   <view class="_view data-v-7567edf6">
     <view class="_view data-v-7567edf6 uni-card md-card-resize">
       <view class="_view data-v-7567edf6 md-clock-des">坚持每天记录自己的进步历程吧！一天最多只能打一次卡哦！</view>
-      <view class="_view data-v-7567edf6 md-clock-details" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">我的打卡记录>></view>
+      <view class="_view data-v-7567edf6 md-clock-details" bindtap="handleProxy" data-eventid="{{'L4t-0'}}" data-comkey="{{$k}}">我的打卡记录>></view>
     </view>
     <view class="_view data-v-7567edf6 uni-card md-card-resize">
       <view class="_view data-v-7567edf6 md-clock-nowtime">{{nowDate}}</view>
@@ -27,10 +27,10 @@
       </view>
     </view>
     <view class="_view data-v-7567edf6 md-clock-out">
-      <button class="_button data-v-7567edf6 md-clock-inner-btn" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}">去打卡</button>
+      <button class="_button data-v-7567edf6 md-clock-inner-btn" bindtap="handleProxy" data-eventid="{{'7FF-1'}}" data-comkey="{{$k}}">去打卡</button>
     </view>
     <view class="_view data-v-7567edf6 md-clock-out">
-      <button bindtap="handleProxy" data-eventid="{{'2'}}" data-comkey="{{$k}}" class="_button data-v-7567edf6">再学一会</button>
+      <button bindtap="handleProxy" data-eventid="{{'Qbq-2'}}" data-comkey="{{$k}}" class="_button data-v-7567edf6">再学一会</button>
     </view>
   </view>
 </template>

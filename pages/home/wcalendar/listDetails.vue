@@ -54,6 +54,7 @@
 			}
 		},
 		onLoad: function(option) {
+			console.log(JSON.stringify(option));
 			uni.showToast({
 				title: `groupId:${option.groupId},id:${option.listId}`,
 				mask: true,

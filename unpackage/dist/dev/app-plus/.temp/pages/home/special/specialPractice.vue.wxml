@@ -18,7 +18,7 @@
     </view>
     <view class="_view data-v-239ae2fc">
       <view class="_view data-v-239ae2fc uni-list">
-        <view class="_view data-v-239ae2fc uni-list-cell" style="display: block;" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
+        <view class="_view data-v-239ae2fc uni-list-cell" style="display: block;" bindtap="handleProxy" data-eventid="{{'4PR-0'}}" data-comkey="{{$k}}">
           <view class="_view data-v-239ae2fc uni-list-cell-navigate">
             <view class="_view data-v-239ae2fc uni-icon {{['uni-icon-' + upOrDown]}}">
               <text style="font-size: 28rpx;font-weight: 600;" class="_text data-v-239ae2fc">编程语言</text>
