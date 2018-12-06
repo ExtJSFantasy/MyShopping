@@ -3,8 +3,8 @@
     <view class="_view data-v-c1baed14 uni-list">
       <view class="_view data-v-c1baed14 uni-list-cell">
         <view class="_view data-v-c1baed14 uni-list-cell-navigate">
-          <text bindtap="handleProxy" data-eventid="{{'Ceb-0'}}" data-comkey="{{$k}}" class="_text data-v-c1baed14">头像</text>
-          <image bindtap="handleProxy" style="width: 80rpx;height: 80rpx;border-radius: 50%;" src="{{imgSrc}}" data-eventid="{{'AaC-1'}}" data-comkey="{{$k}}" class="_image data-v-c1baed14"></image>
+          <text bindtap="handleProxy" data-eventid="{{'yK8-0'}}" data-comkey="{{$k}}" class="_text data-v-c1baed14">头像</text>
+          <image bindtap="handleProxy" style="width: 80rpx;height: 80rpx;border-radius: 50%;" src="{{imgSrc}}" data-eventid="{{'8UE-1'}}" data-comkey="{{$k}}" class="_image data-v-c1baed14"></image>
         </view>
       </view>
       <view class="_view data-v-c1baed14 uni-list-cell">
