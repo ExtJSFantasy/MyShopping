@@ -1,6 +1,6 @@
 <template name="1483132a">
   <view class="_view data-v-8d970744 container">
-    <view class="_view data-v-8d970744 content" bindtouchstart="handleProxy" bindtouchmove="handleProxy" bindtouchend="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" style=" {{[  mLeft > 0    ? 'margin-left:' + (mLeft + 'px') + ';'    : 'margin-right:' + (mLeft + 'px') + ';']}}">
+    <view class="_view data-v-8d970744 content" bindtouchstart="handleProxy" bindtouchmove="handleProxy" bindtouchend="handleProxy" data-eventid="{{'COx-0'}}" data-comkey="{{$k}}" style=" {{[  mLeft > 0    ? 'margin-left:' + (mLeft + 'px') + ';'    : 'margin-right:' + (mLeft + 'px') + ';']}}">
       <view class="_view data-v-8d970744 md-content-detail">
         <view class="_view data-v-8d970744">
           <text style="padding-left: 15rpx;padding-right: 20rpx;" class="_text data-v-8d970744">前端面试经典题目合集（HTML+CSS）</text>

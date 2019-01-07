@@ -5,7 +5,7 @@
         <view class="_view data-v-164e361f uni-list-cell-navigate" style="background-color:rgb(240,239,245) !important; {{[index == 0 ? 'color: rgb(82, 174, 149)' : 'color: rgb(169,169,169)']}}">{{itemList.title}}</view>
         <view class="_view data-v-164e361f uni-list">
           <view class="_view data-v-164e361f uni-list-cell" wx:key="inIndex" key="{{inIndex}}" wx:for="{{itemList.data}}" wx:for-index="inIndex" wx:for-item="innerItem">
-            <view class="_view data-v-164e361f uni-list-cell-navigate uni-navigate-right" bindtap="handleProxy" data-eventid="{{'0-'+index+'-'+inIndex}}" data-comkey="{{$k}}">
+            <view class="_view data-v-164e361f uni-list-cell-navigate uni-navigate-right" bindtap="handleProxy" data-eventid="{{'f80-0-'+index+'-'+inIndex}}" data-comkey="{{$k}}">
               <text class="_text data-v-164e361f" style=" {{[index == 0 ? 'color: rgb(82, 174, 149)' : 'color: #000000']}}">{{innerItem.subName}}</text>
               <text class="_text data-v-164e361f uni-badge" style="margin-right: 20rpx;background-color: transparent;font-size: 32rpx;">{{innerItem.startDate+'-'+innerItem.endTime}}</text>
             </view>

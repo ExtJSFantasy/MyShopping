@@ -1,5 +1,4 @@
 
-@charset "UTF-8";
 @font-face {
   font-family: uniicons;
   font-weight: normal;
@@ -1030,17 +1029,17 @@
   height: 100%;
   box-sizing: border-box;
 }
-.container .content {
+.content {
   height: 100%;
 }
-.container .content .md-content-detail {
+.md-content-detail {
   width: 740rpx;
   position: relative;
   margin: auto;
 }
 .uni-icon-checkmarkempty:before {
   font-size: 48rpx;
-  color: #52ae95;
+  color: rgb(82, 174, 149);
 }
 .uni-list-cell-hover {
   background-color: tanceparent;

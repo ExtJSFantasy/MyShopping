@@ -1,10 +1,10 @@
 <template name="02eb51f5">
   <view class="_view data-v-747fa141">
     <view class="_view data-v-747fa141 uni-list">
-      <view class="_view data-v-747fa141 uni-list-cell" hover-class="uni-list-cell-hover" wx:key="key" key="{{key}}" bindtap="handleProxy" data-eventid="{{'1-'+key}}" data-comkey="{{$k}}" wx:for="{{projects}}" wx:for-index="key" wx:for-item="project">
+      <view class="_view data-v-747fa141 uni-list-cell" hover-class="uni-list-cell-hover" wx:key="key" key="{{key}}" bindtap="handleProxy" data-eventid="{{'sdR-1-'+key}}" data-comkey="{{$k}}" wx:for="{{projects}}" wx:for-index="key" wx:for-item="project">
         <view class="_view data-v-747fa141 uni-media-list">
           <view class="_view data-v-747fa141 uni-media-list-logo">
-            <image class="_image data-v-747fa141 image {{[!project.show ? 'lazy' : '']}}" data-index="{{key}}" bindload="handleProxy" src="{{project.show?project.src:''}}" data-eventid="{{'0-'+key}}" data-comkey="{{$k}}"></image>
+            <image class="_image data-v-747fa141 image {{[!project.show ? 'lazy' : '']}}" data-index="{{key}}" bindload="handleProxy" src="{{project.show?project.src:''}}" data-eventid="{{'Z7M-0-'+key}}" data-comkey="{{$k}}"></image>
             <image class="_image data-v-747fa141 image defaul {{[project.loaded ? 'loaded' : '']}}" src="{{defaultSrc}}"></image>
           </view>
           <view class="_view data-v-747fa141 uni-media-list-body">

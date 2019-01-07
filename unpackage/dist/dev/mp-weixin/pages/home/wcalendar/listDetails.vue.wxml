@@ -30,8 +30,8 @@
       </view>
     </view>
     <view style="display: flex;width: 100%;height: 50px;align-items: center;position: fixed;z-index: 999;bottom: 0;background-color: #F8F8F8;" class="_view data-v-36c3012e">
-      <text style="flex: 1;text-align: center;border-right: solid 2rpx #777777; {{[isState ? 'color:rgb(82, 174, 149)' : 'color:#000000']}}" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}" class="_text data-v-36c3012e">{{!isState ? '我参与了' : '已参加'}}</text>
-      <text style="flex: 1;text-align: center;" bindtap="handleProxy" data-eventid="{{'1'}}" data-comkey="{{$k}}" class="_text data-v-36c3012e">日程纠错</text>
+      <text style="flex: 1;text-align: center;border-right: solid 2rpx #777777; {{[isState ? 'color:rgb(82, 174, 149)' : 'color:#000000']}}" bindtap="handleProxy" data-eventid="{{'t5J-0'}}" data-comkey="{{$k}}" class="_text data-v-36c3012e">{{!isState ? '我参与了' : '已参加'}}</text>
+      <text style="flex: 1;text-align: center;" bindtap="handleProxy" data-eventid="{{'MKx-1'}}" data-comkey="{{$k}}" class="_text data-v-36c3012e">日程纠错</text>
     </view>
   </view>
 </template>
